@@ -3,11 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="Images/" />
+    <!-- <base href="Images/" /> -->
     <title>Assigemnt 1</title>
   </head>
   <body>
-    <header><h1>All the things I've learnt</h1></header>
+    <header><h1>All the things I've learnt</h1>
+      <article>
+        <p>Some internal links</p>
+        <ul>
+          <nav>
+            
+          <a href="#media"><li>Media</li></a>
+          <a href="Websites/other-work.html"><li>Some other work in this site</li></a>
+        </ul>
+          </nav>
+      </article>
+    </header>
     <hr />
     <main>
       <article>
@@ -18,19 +29,12 @@
       <article>
         <p>Now time for some links</p>
         <ol>
-          <a href=""><li>Data One</li></a>
-          <a href=""><li>Data One</li></a>
-          <a href=""><li>Data One</li></a>
+          <a href="https://www.google.com/"><li>Google</li></a>
+          <a href="https://www.youtube.com/"><li>Youtube</li></a>
+          <a href="https://www.instagram.com/"><li>Instagram</li></a>
         </ol>
       </article>
-      <article>
-        <p>Some internal links</p>
-        <ul>
-          <a href=""><li>Data One</li></a>
-          <a href=""><li>Data One</li></a>
-          <a href=""><li>Data One</li></a>
-        </ul>
-      </article>
+
       <section>
         <p>Definition List - reminds me of Dictionary</p>
         <dl>
@@ -44,21 +48,46 @@
       </section>
       <hr />
       <article>
-        <p>Here's some thingss</p>
+        <p><u>Here's some thingss</u></p>
         <p>
-          So, this is me using <em>emphasis</em>. But then again I can use
-          <i>Italic</i>. But <b>bold</b> doesn't have importantance compare to emphasis.
-          <aside>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti suscipit error nobis magni quae, non cupiditate eum repudiandae, sequi minima nihil voluptate quia nulla ducimus asperiores impedit esse consequatur sint! - this is me using aside element
-          </aside>
+          So, this is me using <em>emphasis</em> which stresses empahsis. But
+          then again I can use <i>Italic</i>. But <b>bold</b> doesn't have
+          importantance compare to emphasis. Did you know that the
+          <strong>strong</strong> tag has great importantance.
+          <br />
+          H<sub>2</sub>O
+          <br />
+          5<sup>2</sup> = 25
+          <br />
+          I usually study Java at <time datetime="20:00">20:00</time>
+          <br />
+          The area of a reactangle is <var>l</var> * <var>w</var>
         </p>
+        <aside>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+          suscipit error nobis magni quae, non cupiditate eum repudiandae, sequi
+          minima nihil voluptate quia nulla ducimus asperiores impedit esse
+          consequatur sint! - <del>this is me using aside element</del>
+        </aside>
+        <br />
+        <details>
+          <summary>Click me</summary>
+          Haha you listened to a computer!1
+        </details>
+        <br />
+
         <br />
         <p><abbr title="Doctor">Dr</abbr> Van Blerck is Doctor</p>
-        <blockquote cite="https://www.reddit.com/r/BungouStrayDogs/comments/12xlcie/what_are_the_most_dazais_famousimportant_quotes/?rdt=51459" >
+        <blockquote
+          cite="https://www.reddit.com/r/BungouStrayDogs/comments/12xlcie/what_are_the_most_dazais_famousimportant_quotes/?rdt=51459"
+        >
           <p>
-           <q>Stop pitying yourself. Pity yourself and life becomes an endless nightmare.</q>
-           <br>
-           -- Dazai
+            <q
+              >Stop pitying yourself. Pity yourself and life becomes an endless
+              nightmare.</q
+            >
+            <br />
+            <mark>-- Dazai</mark>
           </p>
         </blockquote>
       </article>
@@ -69,12 +98,14 @@
         <section>
           <p>Images</p>
           <br />
-          <img src="coffee-1.jpg" alt="coffee image" width="100px" />
+          <img src="Images/coffee-1.jpg" alt="coffee image" width="100px" />
 
-          <a href="#"><img src="code-1.jpg" alt="code" width="100px" /></a>
+          <a href="#"
+            ><img src="Images/code-1.jpg" alt="code" width="100px"
+          /></a>
         </section>
 
-        <section>
+        <section id="media">
           <p>Map image</p>
           <map name="stolas">
             <area target="__blank" alt="not found"" href="#"
@@ -83,56 +114,92 @@
             coords="327,79,508,197,340,481,300,241,307,201,319,136"
             shape="poly">
           </map>
-          <img usemap="#stolas" src="stolas.jpeg" alt="not found" />
+          <img usemap="#stolas" src="Images/stolas.jpeg" alt="not found" />
         </section>
 
         <section>
-          <p>Audio - Chopin: Etude Op.10 No.3/p>
-              <figure>
-                <figcaption>My attempt- Beginner RH : G Clef</figcaption>
-                <audio controls>
-                 
-                  <source src="/Audio/Attempt_Etude-3_new.mp3" >
-                </audio>
-              </figure>
-             
-              <figure>
-                <figcaption>Original</figcaption>
-                <audio controls>
-                 
-                  <source src="/Audio/chopin_etude_3_easypno.mp3" >
-                </audio>
-              </figure>
+          <p>
+            Audio - Chopin: Etude Op.10 No.3</p>
+            <figure>
+              <figcaption>My attempt- Beginner RH : G Clef</figcaption>
+              <audio controls>
+                <source src="/Audio/Attempt_Etude-3_new.mp3" />
+              </audio>
+            </figure>
+
+            <figure>
+              <figcaption>Original</figcaption>
+              <audio controls>
+                <source src="/Audio/chopin_etude_3_easypno.mp3" />
+              </audio>
+            </figure>
+          </p>
         </section>
       </article>
     </main>
-<article>
-  <table>
-    <caption>Anime List</caption>
-   <thead>
-    <tr>
-      <th>
-      Code Geass
-      </th>
-    </tr>
-    <tr>
-      <th>
-      Gintama
-      </th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr>
-      <td></td>
-    </tr>
-   </tbody>
-   <tfoot>
-    <tr>
+    <article>
+      <table>
+        <caption>
+          <b>Anime List</b>
+        </caption>
+        <thead>
+          <tr>
+            <td></td>
+            <th>Yes</th>
+            <th>No</th>
+          </tr>
+          <tr></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gintama</td>
+            <td>√</td>
+          </tr>
+          <tr>
+            <td>Code Geass</td>
+            <td>√</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td>Total</td>
+          <td>2</td>
+          <td>0</td>
+        </tfoot>
+      </table>
+      <div>
+        <p>I really want to learn this piece</p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/d05mbR4nJTo?si=IWIULaFJDaJ_DoZD"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p>Madara's Speech</p>
+      <div>
+        <video
+          src="/Video/Wake up to Reality - Madara Uchiha's words.mp4"
+          controls
+          width="500px"
+          poster="Images/Madara Uchiha.jpeg"
+        ></video>
+      </div>
+    </article>
 
-    </tr>
-   </tfoot>
-  </table>
-</article>
+    <article>
+      <p>This is me using Java : code snippet</p>
+
+      <code>
+        public class HelloWorld { public static void main(String[] args) {
+        System.out.println("Hello, World!"); } }
+      </code>
+      <br />
+      <code>HelloWorld</code> class will always be iconic in the programming
+      enviroment
+    </article>
     <footer>
       <p>My details</p>
       <address>
