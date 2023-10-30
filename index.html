@@ -25,16 +25,16 @@
     <main>
       <div>But a div has a generic idea</div>
 
-      <section>
+      <div>
         <p>Now time for some links</p>
         <ol>
           <a href="https://www.google.com/"><li>Google</li></a>
           <a href="https://www.youtube.com/"><li>Youtube</li></a>
           <a href="https://www.instagram.com/"><li>Instagram</li></a>
         </ol>
-      </section>
-
-      <section>
+      </div>
+      <!-- not supposed to use ollu with child a -->
+      <div>
         <p>Definition List - reminds me of Dictionary</p>
         <dl>
           <dt>CSS</dt>
@@ -44,10 +44,10 @@
           <dt>JS</dt>
           <dd>JavaScript</dd>
         </dl>
-      </section>
+      </div>
       <hr />
       <article>
-        <p><u>Here's some thingss</u></p>
+        <h5><u>Here's some thingss</u></h5>
         <p>
           So, this is me using <em>emphasis</em> which stresses empahsis. But
           then again I can use <i>Italic</i>. But <b>bold</b> doesn't have
@@ -73,9 +73,7 @@
           <summary>Click me</summary>
           Haha you listened to a computer!1
         </details>
-        <br />
 
-        <br />
         <p><abbr title="Doctor">Dr</abbr> Van Blerck is Doctor</p>
         <blockquote
           cite="https://www.reddit.com/r/BungouStrayDogs/comments/12xlcie/what_are_the_most_dazais_famousimportant_quotes/?rdt=51459"
@@ -94,7 +92,7 @@
       <article>
         <h2>Images/Videos/Audios</h2>
 
-        <section>
+        <div>
           <p>Images</p>
           <br />
           <img src="Images/coffee-1.jpg" alt="coffee image" width="100px" />
@@ -102,9 +100,9 @@
           <a href="#"
             ><img src="Images/code-1.jpg" alt="code" width="100px"
           /></a>
-        </section>
+        </div>
 
-        <section id="media">
+        <div id="media">
           <p>Map image</p>
           <map name="stolas">
             <area
@@ -123,9 +121,9 @@
             />
           </map>
           <img usemap="#stolas" src="Images/stolas.jpeg" alt="not found" />
-        </section>
+        </div>
 
-        <section>
+        <div>
           <p>Audio - Chopin: Etude Op.10 No.3</p>
           <figure>
             <figcaption>My attempt- Beginner RH : G Clef</figcaption>
@@ -140,10 +138,10 @@
               <source src="/Audio/chopin_etude_3_easypno.mp3" />
             </audio>
           </figure>
-        </section>
+        </div>
       </article>
     </main>
-    <article>
+    <div>
       <table>
         <caption>
           <b>Anime List</b>
@@ -192,7 +190,7 @@
           poster="Images/Madara_Uchiha.jpeg"
         ></video>
       </div>
-    </article>
+    </div>
 
     <div>
       <p>This is me using Java : code snippet</p>
